@@ -8,23 +8,23 @@
     <!-- Title -->
     <title> Callzen - Call Center Business Html Template </title>
     <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/images/favicon/favicon.png">
+    <link rel="shortcut icon" href="<?php echo base_url() ?>assets/images/favicon/favicon.png">
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/bootstrap.min.css">
     <!-- Fontawesome -->
-    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/fontawesome-all.min.css">
     <!-- Line awesome -->
-    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/line-awesome.min.css">
     <!-- Magnific Popup-->
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/magnific-popup.css">
     <!-- Slick -->
-    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/slick.css">
     <!-- Slick -->
-    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/flaticon.css">
     <!-- Odometer -->
-    <link rel="stylesheet" href="assets/css/odometer.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/odometer.css">
     <!-- Main css -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/style.css">
 </head>
 
 <body>
@@ -39,7 +39,7 @@
     <header class="header-bottom" id="header">
         <div class="container">
             <nav class="navbar navbar-expand-xl navbar-light">
-                <a class="navbar-brand logo" href="index.html"><img src="assets/images/logo/logo.png" alt=""></a>
+                <a class="navbar-brand logo" href="index.html"><img src="<?php echo base_url() ?>assets/images/logo/logo.png" alt=""></a>
                 <button class="navbar-toggler header-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span id="hiddenNav"><i class="las la-bars"></i></span>
                 </button>
@@ -107,7 +107,7 @@
     <!-- ==================== Banner Start Here ==================== -->
     <section class="banner section-bg">
         <div class="banner__vector-icon">
-            <img src="assets/images/home-01/banner-vector.png" alt="">
+            <img src="<?php echo base_url() ?>assets/images/home-01/banner-vector.png" alt="">
         </div>
         <div class="container">
             <div class="row gy-5">
@@ -120,7 +120,7 @@
                         <div class="button-wrapper">
                             <a href="contact.html" class="btn--base bg-two">Contact Us</a>
                             <div class="button-wrapper__arrow arrow-one">
-                                <img class="" src="assets/images/home-01/arrow-base.png" alt="">
+                                <img class="" src="<?php echo base_url() ?>assets/images/home-01/arrow-base.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -128,11 +128,11 @@
                 <div class="col-lg-6">
                     <div class="banner-right mt-xl-0 mt-3">
                         <div class="banner-right__thumb">
-                            <img src="assets/images/home-01/banner-img.png" alt="">
-                            <img class="banner-right__arrow" src="assets/images/home-01/banner-arrow.png" alt="">
+                            <img src="<?php echo base_url() ?>assets/images/home-01/banner-img.png" alt="">
+                            <img class="banner-right__arrow" src="<?php echo base_url() ?>assets/images/home-01/banner-arrow.png" alt="">
                             <ul class="banner-right__images">
-                                <li><img src="assets/images/home-01/banner-message1.png" alt=""></li>
-                                <li><img src="assets/images/home-01/banner-message.png" alt=""></li>
+                                <li><img src="<?php echo base_url() ?>assets/images/home-01/banner-message1.png" alt=""></li>
+                                <li><img src="<?php echo base_url() ?>assets/images/home-01/banner-message.png" alt=""></li>
                             </ul>
                         </div>
                     </div>
@@ -149,10 +149,10 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="features-item text-center">
                         <ul class="section-shapes">
-                            <li class="section-shapes__item"><img src="assets/images/home-01/shape-circle.png" alt=""></li>
-                            <li class="section-shapes__item"><img src="assets/images/home-01/shape-plus.png" alt=""></li>
-                            <li class="section-shapes__item"><img src="assets/images/home-01/shape-triangle.png" alt=""></li>
-                            <li class="section-shapes__item"><img src="assets/images/home-01/shape-square.png" alt=""></li>
+                            <li class="section-shapes__item"><img src="<?php echo base_url() ?>assets/images/home-01/shape-circle.png" alt=""></li>
+                            <li class="section-shapes__item"><img src="<?php echo base_url() ?>assets/images/home-01/shape-plus.png" alt=""></li>
+                            <li class="section-shapes__item"><img src="<?php echo base_url() ?>assets/images/home-01/shape-triangle.png" alt=""></li>
+                            <li class="section-shapes__item"><img src="<?php echo base_url() ?>assets/images/home-01/shape-square.png" alt=""></li>
                         </ul>
                         <div class="features-item__icon">
                             <span class="icon-diamond"></span>
@@ -164,10 +164,10 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="features-item text-center">
                         <ul class="section-shapes">
-                            <li class="section-shapes__item"><img src="assets/images/home-01/shape-circle.png" alt=""></li>
-                            <li class="section-shapes__item"><img src="assets/images/home-01/shape-plus.png" alt=""></li>
-                            <li class="section-shapes__item"><img src="assets/images/home-01/shape-triangle.png" alt=""></li>
-                            <li class="section-shapes__item"><img src="assets/images/home-01/shape-square.png" alt=""></li>
+                            <li class="section-shapes__item"><img src="<?php echo base_url() ?>assets/images/home-01/shape-circle.png" alt=""></li>
+                            <li class="section-shapes__item"><img src="<?php echo base_url() ?>assets/images/home-01/shape-plus.png" alt=""></li>
+                            <li class="section-shapes__item"><img src="<?php echo base_url() ?>assets/images/home-01/shape-triangle.png" alt=""></li>
+                            <li class="section-shapes__item"><img src="<?php echo base_url() ?>assets/images/home-01/shape-square.png" alt=""></li>
                         </ul>
                         <div class="features-item__icon">
                             <span class="icon-24-hours"></span>
@@ -179,10 +179,10 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="features-item text-center">
                         <ul class="section-shapes">
-                            <li class="section-shapes__item"><img src="assets/images/home-01/shape-circle.png" alt=""></li>
-                            <li class="section-shapes__item"><img src="assets/images/home-01/shape-plus.png" alt=""></li>
-                            <li class="section-shapes__item"><img src="assets/images/home-01/shape-triangle.png" alt=""></li>
-                            <li class="section-shapes__item"><img src="assets/images/home-01/shape-square.png" alt=""></li>
+                            <li class="section-shapes__item"><img src="<?php echo base_url() ?>assets/images/home-01/shape-circle.png" alt=""></li>
+                            <li class="section-shapes__item"><img src="<?php echo base_url() ?>assets/images/home-01/shape-plus.png" alt=""></li>
+                            <li class="section-shapes__item"><img src="<?php echo base_url() ?>assets/images/home-01/shape-triangle.png" alt=""></li>
+                            <li class="section-shapes__item"><img src="<?php echo base_url() ?>assets/images/home-01/shape-square.png" alt=""></li>
                         </ul>
                         <div class="features-item__icon">
                             <span class="icon-handshake"></span>
@@ -203,7 +203,7 @@
                 <div class="col-lg-6">
                     <div class="about-left pe-lg-3 ">
                         <div class="about-left__thumb">
-                            <img class="w-100" src="assets/images/home-01/about-img.png" alt="">
+                            <img class="w-100" src="<?php echo base_url() ?>assets/images/home-01/about-img.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -217,7 +217,7 @@
                         <div class="button-wrapper ">
                             <a href="contact.html" class="btn--base bg-one">Contact Us</a>
                             <div class="button-wrapper__arrow arrow-two">
-                                <img class="" src="assets/images/home-01/arrow-base-two.png" alt="">
+                                <img class="" src="<?php echo base_url() ?>assets/images/home-01/arrow-base-two.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -234,7 +234,7 @@
                 <div class="col-xl-4">
                     <div class="services-left">
                         <div class="services-left__arrow">
-                            <img src="assets/images/home-01/service-arrow.png" alt="">
+                            <img src="<?php echo base_url() ?>assets/images/home-01/service-arrow.png" alt="">
                         </div>
                         <div class="section-heading style-two">
                             <h2 class="section-heading__title text-white">What We Do</h2>
@@ -302,7 +302,7 @@
     <!-- ==================== Services End Here ==================== -->
 
     <!-- ==================== Feedback Start Here ==================== -->
-    <section class="feedback section-bg bg-img" style="background-image: url(assets/images/home-01/feedback-bg.png);">
+    <section class="feedback section-bg bg-img" style="background-image: url(<?php echo base_url() ?>assets/images/home-01/feedback-bg.png);">
         <div class="feedback__inner py-120">
             <div class="container">
                 <div class="row">
@@ -318,7 +318,7 @@
                         <div class="feedback-item text-center">
                             <div class="feedback-item__thumb">
                                 <div class="feedback-item__thumb-inner">
-                                    <img src="assets/images/home-01/client-img-01.png" alt="">
+                                    <img src="<?php echo base_url() ?>assets/images/home-01/client-img-01.png" alt="">
                                 </div>
                             </div>
                             <h4 class="feedback-item__name text-white">Jenny Wilson</h4>
@@ -330,7 +330,7 @@
                         <div class="feedback-item text-center">
                             <div class="feedback-item__thumb">
                                 <div class="feedback-item__thumb-inner">
-                                    <img src="assets/images/home-01/client-img-02.png" alt="">
+                                    <img src="<?php echo base_url() ?>assets/images/home-01/client-img-02.png" alt="">
                                 </div>
                             </div>
                             <h4 class="feedback-item__name text-white">Darrell Steward</h4>
@@ -342,7 +342,7 @@
                         <div class="feedback-item text-center">
                             <div class="feedback-item__thumb">
                                 <div class="feedback-item__thumb-inner">
-                                    <img src="assets/images/home-01/client-img-03.png" alt="">
+                                    <img src="<?php echo base_url() ?>assets/images/home-01/client-img-03.png" alt="">
                                 </div>
                             </div>
                             <h4 class="feedback-item__name text-white">Esther Howard</h4>
@@ -388,7 +388,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="about-company__thumb">
-                        <img class="w-100" src="assets/images/home-01/about-company-right-img.png" alt="">
+                        <img class="w-100" src="<?php echo base_url() ?>assets/images/home-01/about-company-right-img.png" alt="">
                     </div>
                 </div>
             </div>
@@ -401,7 +401,7 @@
                 <div class="col-lg-6">
                     <div class="about-left pe-lg-5">
                         <div class="about-left__thumb">
-                            <img class="w-100" src="assets/images/home-01/about-company-left-img.png" alt="">
+                            <img class="w-100" src="<?php echo base_url() ?>assets/images/home-01/about-company-left-img.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -415,7 +415,7 @@
                         <div class="button-wrapper ">
                             <a href="contact.html" class="btn--base bg-one">Contact Us</a>
                             <div class="button-wrapper__arrow arrow-two">
-                                <img class="" src="assets/images/home-01/arrow-base-two.png" alt="">
+                                <img class="" src="<?php echo base_url() ?>assets/images/home-01/arrow-base-two.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -438,20 +438,20 @@
             </div>
             <div class="work-shape d-flex justify-content-center">
                 <ul class="work-shape__list">
-                    <li class="work-shape__item"><img src="assets/images/home-01/shape-circle.png" alt=""></li>
-                    <li class="work-shape__item"><img src="assets/images/home-01/shape-square.png" alt=""></li>
-                    <li class="work-shape__item"><img src="assets/images/home-01/shape-triangle.png" alt=""></li>
+                    <li class="work-shape__item"><img src="<?php echo base_url() ?>assets/images/home-01/shape-circle.png" alt=""></li>
+                    <li class="work-shape__item"><img src="<?php echo base_url() ?>assets/images/home-01/shape-square.png" alt=""></li>
+                    <li class="work-shape__item"><img src="<?php echo base_url() ?>assets/images/home-01/shape-triangle.png" alt=""></li>
 
-                    <li class="work-shape__item"><img src="assets/images/home-01/shape-circle.png" alt=""></li>
-                    <li class="work-shape__item"><img src="assets/images/home-01/shape-square.png" alt=""></li>
-                    <li class="work-shape__item"><img src="assets/images/home-01/shape-triangle.png" alt=""></li>
+                    <li class="work-shape__item"><img src="<?php echo base_url() ?>assets/images/home-01/shape-circle.png" alt=""></li>
+                    <li class="work-shape__item"><img src="<?php echo base_url() ?>assets/images/home-01/shape-square.png" alt=""></li>
+                    <li class="work-shape__item"><img src="<?php echo base_url() ?>assets/images/home-01/shape-triangle.png" alt=""></li>
                 </ul>
             </div>
             <div class="row gy-5 work__inner">
                 <div class="col-lg-3 col-sm-6">
                     <div class="work-item text-center">
                         <div class="work-item__arrow">
-                            <img src="assets/images/home-01/work-arrow.png" alt="">
+                            <img src="<?php echo base_url() ?>assets/images/home-01/work-arrow.png" alt="">
                         </div>
                         <div class="work-item__icon">
                             <span class="icon-research"></span>
@@ -463,7 +463,7 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="work-item text-center">
                         <div class="work-item__arrow">
-                            <img src="assets/images/home-01/work-arrow.png" alt="">
+                            <img src="<?php echo base_url() ?>assets/images/home-01/work-arrow.png" alt="">
                         </div>
                         <div class="work-item__icon">
                             <span class="icon-submit"></span>
@@ -475,7 +475,7 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="work-item text-center">
                         <div class="work-item__arrow">
-                            <img src="assets/images/home-01/work-arrow.png" alt="">
+                            <img src="<?php echo base_url() ?>assets/images/home-01/work-arrow.png" alt="">
                         </div>
                         <div class="work-item__icon">
                             <span class="icon-positive-review"></span>
@@ -544,7 +544,7 @@
                         </div>
                         <div class="pricing-right__buttons">
                             <div class="pricing-right__arrow">
-                                <img src="assets/images/home-01/pricing-arrow.png" alt="">
+                                <img src="<?php echo base_url() ?>assets/images/home-01/pricing-arrow.png" alt="">
                             </div>
                             <ul class="pricing-right__btn-group d-flex flex-wrap">
                                 <li> <a href="pricing.html" class="buttons btn--base">Hourly</a> </li>
@@ -1068,10 +1068,10 @@
     <!-- ==================== Cta Start Here ==================== -->
     <section class="cta py-120 section-bg-two">
         <ul class="cta-list">
-            <li class="cta-list__item"><img src="assets/images/home-01/cta-round.png" alt="" class="cta-shape cta-shape-1"></li>
-            <li class="cta-list__item"><img src="assets/images/home-01/cta-dots.png" alt="" class="cta-shape cta-shape-2"></li>
-            <li class="cta-list__item"><img src="assets/images/home-01/cta-play.png" alt="" class="cta-shape cta-shape-3"></li>
-            <li class="cta-list__item"><img src="assets/images/home-01/cta-stair.png" alt="" class="cta-shape cta-shape-4"></li>
+            <li class="cta-list__item"><img src="<?php echo base_url() ?>assets/images/home-01/cta-round.png" alt="" class="cta-shape cta-shape-1"></li>
+            <li class="cta-list__item"><img src="<?php echo base_url() ?>assets/images/home-01/cta-dots.png" alt="" class="cta-shape cta-shape-2"></li>
+            <li class="cta-list__item"><img src="<?php echo base_url() ?>assets/images/home-01/cta-play.png" alt="" class="cta-shape cta-shape-3"></li>
+            <li class="cta-list__item"><img src="<?php echo base_url() ?>assets/images/home-01/cta-stair.png" alt="" class="cta-shape cta-shape-4"></li>
         </ul>
         <div class="container">
             <div class="row justify-content-center">
@@ -1081,7 +1081,7 @@
                         <div class="button-wrapper ">
                             <a href="contact.html" class="btn--base bg-one">Subscribe Now</a>
                             <div class="button-wrapper__arrow arrow-three">
-                                <img class="" src="assets/images/home-01/arrow-three.png" alt="">
+                                <img class="" src="<?php echo base_url() ?>assets/images/home-01/arrow-three.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -1115,7 +1115,7 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="blog-item">
                                 <div class="blog-item__thumb">
-                                    <a href="blog-details.html"><img src="assets/images/home-01/blog-img-01.png" alt=""></a>
+                                    <a href="blog-details.html"><img src="<?php echo base_url() ?>assets/images/home-01/blog-img-01.png" alt=""></a>
                                     <div class="blog-item__date">
                                         <h4 class="blog-item__date-time">15</h4>
                                         <span class="blog-item__date-month"> Aug</span>
@@ -1134,7 +1134,7 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="blog-item">
                                 <div class="blog-item__thumb">
-                                    <a href="blog-details.html"><img src="assets/images/home-01/blog-img-02.png" alt=""></a>
+                                    <a href="blog-details.html"><img src="<?php echo base_url() ?>assets/images/home-01/blog-img-02.png" alt=""></a>
                                     <div class="blog-item__date">
                                         <h4 class="blog-item__date-time">15</h4>
                                         <span class="blog-item__date-month"> Aug</span>
@@ -1153,7 +1153,7 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="blog-item">
                                 <div class="blog-item__thumb">
-                                    <a href="blog-details.html"><img src="assets/images/home-01/blog-img-03.png" alt=""></a>
+                                    <a href="blog-details.html"><img src="<?php echo base_url() ?>assets/images/home-01/blog-img-03.png" alt=""></a>
                                     <div class="blog-item__date">
                                         <h4 class="blog-item__date-time">15</h4>
                                         <span class="blog-item__date-month"> Aug</span>
@@ -1181,23 +1181,23 @@
     <!-- ==================== Footer End Here ==================== -->
     <footer class="footer-area section-bg-two">
         <ul class="work-shape__list">
-            <li class="work-shape__item"><img src="assets/images/home-01/shape-circle.png" alt=""></li>
-            <li class="work-shape__item"><img src="assets/images/home-01/shape-square.png" alt=""></li>
-            <li class="work-shape__item"><img src="assets/images/home-01/shape-triangle.png" alt=""></li>
+            <li class="work-shape__item"><img src="<?php echo base_url() ?>assets/images/home-01/shape-circle.png" alt=""></li>
+            <li class="work-shape__item"><img src="<?php echo base_url() ?>assets/images/home-01/shape-square.png" alt=""></li>
+            <li class="work-shape__item"><img src="<?php echo base_url() ?>assets/images/home-01/shape-triangle.png" alt=""></li>
         </ul>
         <div class="container footer-top py-120">
             <div class="row justify-content-center gy-5">
                 <div class="col-xl-3 col-sm-6">
                     <div class="footer-item">
                         <div class="footer-item__logo">
-                            <a href="index.html"> <img src="assets/images/logo/logo-footer.png" alt=""></a>
+                            <a href="index.html"> <img src="<?php echo base_url() ?>assets/images/logo/logo-footer.png" alt=""></a>
                         </div>
                         <p class="footer-item__desc">Maecenas nec odio et ante tincid empus. Donec vitae sapien ut libero venaucibus. Nullam quis ante. Etiam sit amet.</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-sm-6">
                     <div class="footer-item">
-                        <h5 class="footer-item__title bg-img bg-img__contain" style="background-image: url(assets/images/home-01/footer-title-bg.png);">Useful Link</h5>
+                        <h5 class="footer-item__title bg-img bg-img__contain" style="background-image: url(<?php echo base_url() ?>assets/images/home-01/footer-title-bg.png);">Useful Link</h5>
                         <ul class="footer-menu">
                             <li class="footer-menu__item"><a href="index-two.html" class="footer-menu__link">Home Two</a></li>
                             <li class="footer-menu__item"><a href="about.html" class="footer-menu__link">About Us</a></li>
@@ -1208,7 +1208,7 @@
                 </div>
                 <div class="col-xl-3 col-sm-6">
                     <div class="footer-item">
-                        <h5 class="footer-item__title bg-img bg-img__contain" style="background-image: url(assets/images/home-01/footer-title-bg.png);">Pages</h5>
+                        <h5 class="footer-item__title bg-img bg-img__contain" style="background-image: url(<?php echo base_url() ?>assets/images/home-01/footer-title-bg.png);">Pages</h5>
                         <ul class="footer-menu">
                             <li class="footer-menu__item"><a href="work.html" class="footer-menu__link">How to Do </a></li>
                             <li class="footer-menu__item"><a href="pricing.html" class="footer-menu__link">Pricing Plan </a></li>
@@ -1219,7 +1219,7 @@
                 </div>
                 <div class="col-xl-3 col-sm-6">
                     <div class="footer-item">
-                        <h5 class="footer-item__title bg-img bg-img__contain" style="background-image: url(assets/images/home-01/footer-title-bg.png);">Contact Us</h5>
+                        <h5 class="footer-item__title bg-img bg-img__contain" style="background-image: url(<?php echo base_url() ?>assets/images/home-01/footer-title-bg.png);">Contact Us</h5>
                         <p class="footer-item__desc">4517 Washington Ave. Manchester, Kentucky 39495</p>
                         <ul class="social-list">
                             <li class="social-list__item"><a href="www.facebook.com" class="social-list__link"><i class="fab fa-facebook-f"></i></a> </li>
@@ -1252,21 +1252,21 @@
 
 
     <!-- Jquery js -->
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="<?php echo base_url() ?>assets/js/jquery-3.6.0.min.js"></script>
     <!-- Popper js -->
-    <script src="assets/js/popper.min.js"></script>
+    <script src="<?php echo base_url() ?>assets/js/popper.min.js"></script>
     <!-- Bootstrap js -->
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="<?php echo base_url() ?>assets/js/bootstrap.min.js"></script>
     <!-- Magnific Popup -->
-    <script src="assets/js/magnific-popup.min.js"></script>
+    <script src="<?php echo base_url() ?>assets/js/magnific-popup.min.js"></script>
     <!-- Slick js -->
-    <script src="assets/js/slick.min.js"></script>
+    <script src="<?php echo base_url() ?>assets/js/slick.min.js"></script>
     <!-- Odometer js -->
-    <script src="assets/js/odometer.min.js"></script>
+    <script src="<?php echo base_url() ?>assets/js/odometer.min.js"></script>
     <!-- Viewport js -->
-    <script src="assets/js/viewport.jquery.js"></script>
+    <script src="<?php echo base_url() ?>assets/js/viewport.jquery.js"></script>
     <!-- Main js -->
-    <script src="assets/js/main.js"></script>
+    <script src="<?php echo base_url() ?>assets/js/main.js"></script>
 
 </body>
 

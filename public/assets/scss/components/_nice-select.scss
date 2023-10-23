@@ -1,0 +1,45 @@
+
+// -------------- Form Select Css ------------------------
+.nice--select {
+  color: $light;
+  .current {
+      font-size: 13px;
+  }
+  &:focus {
+      border: 1px solid $base;
+  }
+  &:after {
+      transform: rotate(0deg);
+      width: 5px;
+      border-style: solid;
+      border-width: 5px;
+      border-color: $light transparent transparent transparent;
+  }
+  &.open:after {
+      transform: rotate(0deg);
+  }
+
+  .option {
+      color: $light;
+      background-color: $white;
+      font-size: 14px;
+      &.selected.focus {
+          font-weight: 600;
+          background-color: $white !important;
+          color: $base;
+          &:hover {
+              background-color: $base !important;
+              color: $white !important;
+          }
+      }
+      &:hover {
+          background-color: $base;
+          color: $white;
+      }
+  }
+  .wide {
+      background-color: $white;
+      border: 1px solid $border-color;
+      gap: 0px;
+  }
+}

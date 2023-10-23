@@ -1,0 +1,122 @@
+.testimonial {
+    position: relative;
+    .testimonial__circle {
+        width: 300px;
+        height: 300px;
+        right: 10px;
+        top: 0;
+        background-color: transparent;
+        border-radius: 50%;
+        border: 35px solid transparentize($base, .95);
+        position: absolute;
+        z-index: -1;
+    }
+}
+
+.testimonial {
+    &__left {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        z-index: 1;
+        margin-bottom: 30px;
+        @media (max-width: 575px) {
+            margin-bottom: 0;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        &::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            left: -30px;
+            bottom: -30px;
+            background-color: transparent;
+            border: 1px dashed $base;
+            z-index: -1;
+            @media (max-width: 575px) {
+                display: none;
+            }
+        }
+        &::after {
+            position: absolute;
+            content: "";
+            width: 40px;
+            height: 40px;
+            right: 0px;
+            top: 0px;
+            background-color: $base;
+            z-index: 1;
+        }
+    }
+}
+
+.testimonial-item {
+    &__icon  {
+        width: 70px;
+        height: 70px;
+        background-color: transparentize( $base, .78);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50% 5px 50% 50%;
+        color: $base;
+        font-size: 30px;
+    }
+    &__desc {
+        margin-top: 50px;
+        font-size: 22px;
+        font-weight: 500;
+        font-style: italic;
+        @media (max-width: 991px) {
+            margin-top: 40px;
+        }
+        @media (max-width: 767px) {
+            font-size: 20px;
+            margin-top: 30px;
+        }
+        @media (max-width: 575px) {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    }
+}
+
+// Client Info
+.testimonial-info {
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    @media (max-width: 991px) {
+        margin-top: 50px;
+    }
+    @media (max-width: 767px) {
+        font-size: 20px;
+        margin-top:40px;
+    }
+    @media (max-width: 575px) {
+        font-size: 18px;
+        margin-top: 30px;
+    }
+    &__thumb {
+        width: 80px;
+        img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+    &__content {
+        width: calc(100% - 80px);
+        padding-left: 20px;
+    }
+    &__name {
+        margin-bottom: 5px;
+    }
+}

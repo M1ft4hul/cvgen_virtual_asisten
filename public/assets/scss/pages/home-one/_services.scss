@@ -1,0 +1,119 @@
+
+.services {
+    margin-bottom: -1px;
+    &.section-bg {
+        &::before {
+            clip-path: polygon(0 0, 100% 8%, 100% 100%, 0% 100%);
+            @media (max-width: 991px) {
+               clip-path: unset;
+            }
+        }
+    }
+}
+
+.services-left {
+    position: relative;
+    &__arrow {
+        position: absolute;
+        left: -140px;
+        width: 130px;
+        top: 15px;
+        z-index: -1;
+        animation: message1 6s ease-in-out infinite;
+        @media (max-width: 1600px) {
+            display: none;
+        }
+    }
+}
+
+
+.services-item {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 350px;
+    &__title {
+        margin-bottom: 16px;
+        @media (max-width: 767px) {
+            margin-bottom: 12px
+        }
+    }
+    @media (max-width: 991px) {
+        max-width: 100%;
+    }
+    &:hover {
+        .services-item__icon {
+            &::before {
+                right: 40px
+            }
+        }
+    }
+    &:hover .services-item__icon::before {
+        right: 6px;
+        bottom: 2px
+    }
+
+    &__icon {
+        @include background-with-border-small; 
+    }
+    &__content {
+        width: calc(100% - 50px);
+        padding-left: 24px;
+    }
+}
+
+.services-right {
+    &__gap {
+        row-gap: 60px;
+        @media (max-width: 1199px) {
+            row-gap: 50px;
+        }
+        @media (max-width: 991px) {
+            row-gap: 40px;
+        }
+        @media (max-width: 767px) {
+            row-gap: 40px;
+        }
+    }
+    div[ class*="col"] {
+        &:nth-of-type(4n + 1) {
+            .services-item {
+                &__icon {
+                    background-color: $color--one;
+                    &::before {
+                        border-color: $color--one;
+                    }
+                }
+            }
+        }
+        &:nth-of-type(4n + 2) {
+            .services-item {
+                &__icon {
+                    background-color: $color--two;
+                    &::before {
+                        border-color: $color--two;
+                    }
+                }
+            }
+        }
+        &:nth-of-type(4n + 3) {
+            .services-item {
+                &__icon {
+                    background-color: $color--three;
+                    &::before {
+                        border-color: $color--three;
+                    }
+                }
+            }
+        }
+        &:nth-of-type(4n + 4) {
+            .services-item {
+                &__icon {
+                    background-color: $color--four;
+                    &::before {
+                        border-color: $color--four;
+                    }
+                }
+            }
+        }
+    }
+}

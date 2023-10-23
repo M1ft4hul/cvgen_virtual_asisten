@@ -1,0 +1,393 @@
+.pricing-wrapper{
+    position: relative;
+    margin-bottom: 110px;
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 991px) {
+        margin-bottom: 0px;
+    };
+}
+
+.pricing-item {
+  box-shadow: $box-shadow;
+  border-radius: 15px;
+  overflow: hidden;
+  max-width: 410px;
+  background-color: $white;
+  &:last-child {
+    @media (max-width: 767px) {
+      margin-top: 20px;
+    }
+  }
+  &:hover:nth-of-type(2n + 1) {
+    position: relative;
+    z-index: 1;
+  }
+  @media (max-width: 1399px) {
+    max-width: 360px;
+  }
+  @media (max-width: 991px) {
+    max-width: 49%;
+  }
+  @media (max-width: 767px) {
+    max-width: 100%;
+  }
+  &:nth-of-type(2n + 2) {
+    position: absolute;
+    top: 27%;
+    right: 0;
+    width: 100%;
+    @media (max-width: 991px) {
+        top: 0;
+        max-width: 49%;
+    }
+    @media (max-width: 767px) {
+        position: relative;
+        max-width: 100%;
+    }
+}
+  &__content {
+    padding: 50px 60px;
+    @media (max-width: 1399px) {
+        padding: 35px 45px;
+    }
+    @media (max-width: 1199px) {
+        padding: 30px 25px;
+    }
+    @media (max-width: 991px) {
+        padding: 35px 45px;
+    }
+    @media (max-width: 767px) {   
+      padding: 30px 20px;
+    }
+    @media (max-width: 575px) {    
+        padding: 25px 20px;
+    }
+  }
+  &__price {
+    margin-bottom: 0px;
+  }
+  &__name {
+    margin-bottom: 25px;
+    @media (max-width: 767px) { 
+        font-size: 22px;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    li {
+      position: relative;
+      padding-left: 20px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      &::before {
+        position: absolute;
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: $base;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+      }
+    }
+  }
+
+  &__details {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__details-btn {
+    background-color: $base;
+    width: 70%;
+    padding: 35px 20px;
+    text-align: center;
+    font-size: 24px;
+    color: $white;
+    font-weight: 700;
+    transition: .3s;
+    @media (max-width: 1199px) { 
+        font-size: 20px;
+        padding: 25px 15px;
+    }
+    @media (max-width: 767px) { 
+      padding: 20px 15px;
+      font-size: 18px;
+    }
+    @media (max-width: 575px) { 
+      padding: 15px 15px;
+      font-size: 16px;
+    }
+    &:hover {
+        color: $base-two;
+      }
+  }
+  &__details-icon {
+    background-color: $base-two;
+    width: 30%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    font-size: 25px;
+    @media (max-width: 991px) { 
+        font-size: 30px;
+    }
+    @media (max-width: 767px) { 
+        font-size: 25px;
+    }
+  }
+}
+
+// ================================= Price Item Style two Start =================================  
+  .price-item-two {
+    background-color: $white;
+    border-radius: 8px;
+    overflow: hidden;
+    &__header-wrapper {
+      position: relative;
+      z-index: 1;
+      margin-bottom: 15px;
+      @media (max-width: 767px) {
+        margin-bottom: 0;
+      }
+      &::before{
+        position: absolute;
+        content: "";
+        width: 52.6%;
+        height: 100%;
+        left: 0;
+        bottom: 10px;
+        bottom: 4%;
+        background-color: transparent;
+        z-index: -1;
+        border-bottom: 2px dashed $base;
+        transform: rotate(9deg);
+        @media (max-width: 767px) {
+          display: none;
+        }
+      }
+      &::after {
+        position: absolute;
+        content: "";
+        width: 52.6%;
+        height: 100%;
+        right: 0;
+        bottom: 10px;
+        bottom: 4%;
+        background-color: transparent;
+        z-index: -1;
+        border-bottom: 2px dashed $base;
+        transform: rotate(-9deg);
+        @media (max-width: 767px) {
+          display: none;
+        }
+      }
+    }
+    &__header {
+      text-align: center;
+      background-color: $base;
+      padding: 20px 20px;
+      position: relative;
+      clip-path: polygon(0 0, 100% 0, 100% 76%, 50% 100%, 0 76%);
+    }
+    &__price {
+      margin-bottom: 0px;
+      color: $white;
+    }
+
+    &__pricename {
+        color: $white;
+        font-size: 30px;
+        @media (max-width: 991px) {
+          font-size: 25px;
+        }
+        @media (max-width: 767px) {
+          font-size: 20px;
+        }
+    }
+    &__body {
+      padding: 30px 40px;
+    }
+    &__button {
+      margin-bottom: 50px;
+      @media (max-width: 991px) {
+        margin-bottom: 40px;
+      }
+      @media (max-width: 767px) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .price-item-two__wrapper {
+    [class*="col"]:nth-of-type(3n + 1) {
+      .price-item-two {
+        &__header-wrapper {
+          &::before {
+            border-color: $color--one;
+          }
+          &::after {
+            border-color: $color--one;
+          }
+        }
+        &__header {
+          background-color: $color--one;
+        }
+        .pricing-item__list {
+          li {
+            &::before {
+              background-color: $color--one;
+            }
+          }
+        }
+        .price-item-two__button {
+          .btn--base {
+            background-color: $color--one;
+            &::before {
+              border-color: $color--one;
+            }
+          }
+        }
+      }
+    }
+    [class*="col"]:nth-of-type(3n + 2) {
+      .price-item-two {
+        &__header-wrapper {
+          &::before {
+            border-color: $color--two;
+          }
+          &::after {
+            border-color: $color--two;
+          }
+        }
+        &__header {
+          background-color: $color--two;
+        }
+        .pricing-item__list {
+          li {
+            &::before {
+              background-color: $color--two;
+            }
+          }
+        }
+        .price-item-two__button {
+          .btn--base {
+            background-color: $color--two;
+            &::before {
+              border-color: $color--two;
+            }
+          }
+        }
+      }
+    }
+    [class*="col"]:nth-of-type(3n + 3) {
+      .price-item-two {
+        &__header-wrapper {
+          &::before {
+            border-color: $color--three;
+          }
+          &::after {
+            border-color: $color--three;
+          }
+        }
+        &__header {
+          background-color: $color--three;
+        }
+        .pricing-item__list {
+          li {
+            &::before {
+              background-color: $color--three;
+            }
+          }
+        }
+        .price-item-two__button {
+          .btn--base {
+            background-color: $color--three;
+            &::before {
+              border-color: $color--three;
+            }
+          }
+        }
+      }
+    }
+
+  }
+// ================================= Price Item Style two End =================================  
+
+// Price Section Right Content
+.pricing-right {
+  &__buttons {
+    position: relative;
+    display: inline-block;
+    &:hover {
+      .pricing-right__arrow {
+        top: 60px;
+      }
+    }
+  }
+  &__arrow {
+    position: absolute;
+    right: 0;
+    width: 70px;
+    top: 70px;
+    transition: 0.3s;
+    @media (max-width: 991px) {
+        width: 60px;
+    }
+    @media (max-width: 767px) {
+        width: 50px;
+    }
+  }
+  &__btn-group {
+    position: relative;
+    margin-bottom: 90px;
+    @media (max-width: 991px) {
+        margin-bottom: 80px;
+    }
+    @media (max-width: 767px) {
+        margin-bottom: 70px;
+    }
+    li {
+      .buttons {
+        padding: 18px 55px;
+        font-weight: 600;
+        transition: 0.3s;
+        @media (max-width: 991px) {
+            padding: 16px 40px;
+        }
+        @media (max-width: 767px) {
+            padding: 15px 35px;
+        }
+      }
+      &:first-child {
+        .btn--base {
+          &::before {
+            content: unset;
+          }
+        }
+        .buttons {
+          border-radius: 30px 0px 0px 30px;
+          
+          &:hover {
+            background-color: darken($base, 10%);
+          }
+        }
+      }
+      &:last-child {
+        .buttons {
+            background-color: $light-white;
+            border-radius: 0px 30px 30px 0px;
+            color: $base-two;
+            &:hover {
+              background-color: $light; 
+            }
+          }
+      }
+    }
+  }
+}

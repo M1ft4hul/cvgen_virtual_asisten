@@ -1,0 +1,69 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+// ================ Css Variables Start ========================
+:root {
+  --heading-one: clamp(1.5rem, 1.4vw + 1rem, 3.75rem); //Min:24px - Max:60px
+  --heading-two: clamp(1.375rem, 1.3vw + 1rem, 2.5rem); //Min: 22px - Max: 40px
+  --heading-three: clamp(1.25rem, 1.2vw + 1rem, 1.875rem); //Min: 20px - Max: 30px
+  --heading-four: clamp(1.125rem, 1.1vw + 1rem, 1.25rem); //in: 18px - Max: 24px
+  --heading-five: clamp(1.0625rem, 1.1vw + 1rem, 1.25rem); //in: 17px - Max: 20px
+  --heading-six: 1rem;
+}
+// ================ Css Variables End ========================
+
+  // ====================== Font Family =================================
+  $heading-font: 'Poppins', sans-serif;
+  $body-font: 'Roboto', sans-serif;
+
+
+  $primary: #007bff;
+  $secondary:#adb5bd;
+  $success: 	#17d605;
+  $danger: #f75959;
+  $warning: #ff9e42;
+  $info: #17a2b8;
+
+ // =============================== Site Colors ======================
+  $color--one: #FF366B;
+  $color--two: #1A28F6;
+  $color--three: #F3D337;
+  $color--four: #CF04C7;
+
+  $base: #FF366B;
+  $base-two: #080C3C; 
+  $heading-color: #080C3C;
+  $body-background: #fff;
+  $bg-two: #fafafa; 
+
+  $body-color: #617686; 
+
+  $white: #fff;
+  $light: #b9babb;
+  $light-white: #fafafa; 
+  $black: #181d20; 
+  $dark: #22272b;
+  $dark-medium: #2d3237;
+  $dark-light: #303336;
+
+  // ================= Box Shadow ================
+  $header-box-shadow: 0px 0px 10px 2px #12347187;
+  $mobile-box-shadow: 0px -1px 5px 0px #99999936;
+  $box-shadow: 0px -30px 100px rgba(0, 0, 0, 0.05);
+  $box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+  $box-shadow-hover: 0px -2px 20px rgba(0, 0, 0, 0.04);
+
+   // ============================= border Color====================
+   $border-color:  #c9c3c36b;
+   $border-color-light: #e3dddd6b;
+ 
+  // =============================== Common Colors ======================
+    $primary: #007bff;
+    $secondary:#adb5bd;
+    $success: 	#17d605;
+    $danger: #f75959;
+    $warning: #ff9e42;
+    $info: #17a2b8;
+  
+
+  

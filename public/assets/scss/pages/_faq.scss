@@ -1,0 +1,21 @@
+
+.faq-content {
+    position: relative;
+    z-index: 1;
+    &__thumb {
+        position: relative;
+        mask-image: url(../images/home-02/faq-shape.png);
+        mask-size: 100%;
+        mask-repeat: no-repeat;
+        mask-position: center;
+        img {
+
+        }
+    }
+    &__border {
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        z-index: -1;
+    }
+}

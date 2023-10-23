@@ -1,0 +1,15 @@
+
+.counterup-item {
+    &__border {
+        border-bottom: $border-color;
+    }
+    &__title {
+        color: $base-two;
+        font-weight: 300;
+        margin-bottom: 10px;
+    }
+}
+
+.odometer {
+    font-weight: 600;
+}

@@ -1,0 +1,62 @@
+
+.service-two {
+    // padding-bottom: 300px;
+    clip-path: polygon(0 0, 100% 0, 100% 88%, 0% 100%);
+    @media (max-width: 1199px) {
+        clip-path: unset;
+    }
+    padding-top: 60px;
+  padding-bottom: 60px;
+  @media (min-width: 576px) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  @media (min-width: 992px) {
+    padding-bottom: 80px;
+  }
+  @media (min-width: 1200px) {
+    padding-bottom: 240px;
+  }
+}
+.service-two-item {
+    background-color: $white;
+    border-radius: 10px;
+    padding: 55px 40px;
+    box-shadow: $box-shadow;
+    @media (max-width: 1199px) {
+        padding: 40px 20px;
+    }
+    &__icon {
+        width: 70px;
+        height: 70px;
+        background-color: $base;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50% 5px 50% 50%;
+        color: $white;
+        font-size: 30px;
+    }
+    &__title {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    &__button {
+        margin-top: 20px;
+    }
+}
+
+.service-item-wrapper {
+    [class*="col"]:nth-of-type(4n + 1) .service-two-item__icon {
+        background-color: $color--one;
+    }
+    [class*="col"]:nth-of-type(4n + 2) .service-two-item__icon {
+        background-color: $color--two;
+    }
+    [class*="col"]:nth-of-type(4n + 3) .service-two-item__icon {
+        background-color: $color--three;
+    }
+    [class*="col"]:nth-of-type(4n + 4) .service-two-item__icon {
+        background-color: $color--four;
+    }
+}

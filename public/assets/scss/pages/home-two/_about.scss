@@ -1,0 +1,30 @@
+
+.about-two-thumb {
+    position: relative;
+    z-index: 1;
+    &__img {
+        mask-image: url(../images/home-02/about-shape.png);
+        mask-size: 100%;
+        mask-repeat: no-repeat;
+        mask-position: center;
+    }
+    .about-border {
+        position: absolute;
+        left: 0;
+        bottom: -15px;
+        z-index: -1;
+    }
+}
+
+.about-right {
+    &__desc {
+        font-size: 22px;
+        color: $black;
+        @media (max-width: 991px) {
+            font-size: 20px;
+        }
+        @media (max-width: 767px) {
+            font-size: 18px;
+        }
+    }
+}

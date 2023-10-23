@@ -1,0 +1,36 @@
+.pagination {
+    justify-content: center;
+    margin-top: 60px;
+    .page-item {
+        .page-link{
+            border: 1px solid $body-color;
+            margin: 0 5px;
+            border-radius: 50%;
+            height: 40px;
+            width: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $base-two;
+            color: $body-color;
+            font-weight: 500;
+            &.active {
+                background-color: $base;
+                color: $white;
+                border-color: $base;
+            }
+            &:hover {
+                background-color: $base;
+                border-color: $base;
+                color: $white;
+            }
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+
+
+

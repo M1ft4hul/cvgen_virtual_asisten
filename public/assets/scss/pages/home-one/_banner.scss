@@ -1,0 +1,140 @@
+// ============= Banner Start Here =======================
+.banner {
+  padding: 190px 0 100px;
+  position: relative;
+  z-index: 1;
+  @media (max-width: 991px) {
+    padding: 140px 0 80px;
+  }
+  @media (max-width: 575px) {
+    padding: 115px 0 60px;
+  }
+  &.style-two {
+    padding: 190px 0 295px;
+    @media (max-width: 1199px) {
+      padding: 185px 0 255px;
+    }
+    @media (max-width: 575px) {
+      padding: 115px 0 170px;
+    }
+    @media (max-width: 575px) {
+      padding: 115px 0 170px;
+    }
+    .section-heading__title {
+      margin-bottom: 0;
+    }
+    &.section-bg {
+      &::before {
+        clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+        @media (max-width: 575px) {
+          clip-path: unset;
+        }
+      }
+    }
+  }
+  &.section-bg {
+    &::before {
+      clip-path: polygon(0 0, 100% 0, 100% 57%, 0% 100%);
+      @media (max-width: 991px) {
+        clip-path: unset;
+      }
+    }
+  }
+  .section-heading {
+    &__subtitle {
+      max-width: 470px;
+    }
+  }
+  &__vector-icon {
+    position: absolute;
+    left: 11%;
+    top: 35%;
+    animation: vector 20s ease-in-out infinite;
+    @media (max-width: 575px) {
+      display: none;
+    }
+  }
+}
+@keyframes vector {
+  0%   {
+    transform: translateX(70px);
+  }
+  25%  {
+     transform: translateY(70px);
+    }
+  50%  {
+    transform: translateX(-70px);
+  }
+  75%  {
+    transform: translateY(-70px);
+    }
+  100% {
+    transform: translateX(70px);
+  }
+}
+
+.banner-right {
+  &__thumb {
+    max-width: 100%;
+    position: relative;
+  }
+  &__arrow {
+    position: absolute;
+    right: -25px;
+    top: 60px;
+    height: 100px;
+    width: auto;
+    animation: message2 12s linear infinite;
+    z-index: -1;
+    @media (max-width: 1199px) {
+        right: -50px;
+    }
+    @media (max-width: 767px) {
+        right: -30px;
+    }
+    @media (max-width: 575px) {
+        display: none;
+    }
+  }
+  &__images {
+    li {
+      &:nth-child(1) {
+        position: absolute;
+        top: 6%;
+        animation: message1 12s ease-in-out infinite;
+        width: 18%;
+      }
+      &:nth-child(2) {
+        position: absolute;
+        top: 18%;
+        animation: message2 12s ease-in-out infinite;
+        width: 25%;
+      }
+    }
+  }
+}
+
+@keyframes message1 {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(40px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes message2 {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(40px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+// ============= Banner End Here =======================

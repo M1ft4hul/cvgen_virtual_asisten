@@ -1,0 +1,28 @@
+
+.team-item {
+    padding: 25px 25px 35px;
+    background-color: $white;
+    box-shadow: $box-shadow;
+    border-radius: 8px;
+    @media (max-width: 575px) {
+        padding: 20px 20px 25px;
+    }
+    &__thumb {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+    }
+    &__content {
+        margin-top: 30px;
+        text-align: center;
+    }
+    &__title {
+        margin-bottom: 5px;
+    }
+    &__designation {
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,157 @@
+//=========================== Accodion style start =============================
+
+.custom--accordion {
+    // Default Style
+    .accordion-item {
+        border: 0;
+        background-color: $white !important;
+        border-radius: 5px;
+        box-shadow: $box-shadow;
+        &:not(:last-child) {
+            margin-bottom:20px;
+        }
+    }
+    .accordion-body {
+        padding: 20px 10px 20px 50px;
+        @media (max-width: 767px) {
+            padding: 15px 10px 15px 40px;
+            font-size: 18px;
+        }
+        @media (max-width: 575px) {
+            padding: 15px 10px 15px 30px;
+            font-size: 16px;
+        }
+        .text {
+            max-width: 60%;
+            @media (max-width: 575px) {
+                max-width: 100%;
+            }
+        }
+    }
+    .accordion-button{
+        background-color: transparent;
+        color: $black;
+        font-size: 20px;
+        font-weight: 500;
+        padding: 20px 10px 20px 50px;
+        @media (max-width: 767px) {
+            padding: 15px 10px 15px 40px;
+            font-size: 18px;
+        }
+        @media (max-width: 575px) {
+            padding: 15px 10px 15px 30px;
+            font-size: 16px;
+        }
+        &::after {
+            background-image: none;
+        }
+        &:focus {
+            box-shadow: none;
+        }
+        &:not(.collapsed) {
+            color: $base !important;
+            background-color: transparent !important;
+            box-shadow: none;
+            &::after {
+                transform: rotate(0deg);
+                background-image: none;
+            }
+        }
+        &[aria-expanded="true"], &[aria-expanded="false"] {
+            &::after {
+                font-family: "Line Awesome Free";
+                font-weight: 900;
+                content: "\f068";
+                display: inline-block;
+                position: absolute;
+                margin-right: auto;
+                width: 0 !important;
+                left: 20px;
+                @media (max-width: 767px) {
+                    font-size: 15px;
+                    left: 15px;
+                }
+                @media (max-width: 575px) {
+                    font-size: 14px;
+                    left: 10px;
+                }
+            }
+        }
+        &[aria-expanded="false"] {
+            &::after {
+                content: "\f067";
+            }
+        }
+    }
+
+     // Style Two
+     &.style-two {
+        .accordion-item {
+            border-bottom: 1px solid $border-color-light;
+            border-radius: 0px;
+            box-shadow: none;
+            &:not(:last-child) {
+                margin-bottom: 15px;
+                @media (max-width: 575px) {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        .accordion-body {
+            padding: 0px 0 30px 0;
+        }
+        .accordion-button{
+            background-color: transparent;
+            padding: 0px 0px 15px 0px;
+            @media (max-width: 575px) {
+                padding: 0px 0px 10px 0px;
+            }
+            &[aria-expanded="true"], &[aria-expanded="false"] {
+                &::after {
+                    font-family: "Font Awesome 6 Free";
+                    font-weight: 900;
+                    content: "\f106";
+                    font-size: 14px;
+                    display: inline-block;
+                    position: relative;
+                    margin-right: 15px;
+                    margin-left: auto !important;
+                    right: 0px;
+                    background-color: transparentize( $base, .85);
+                    width: 30px !important;
+                    height: 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    color: $base;
+                    @media (max-width: 991px) {
+                        margin-right: 10px;
+                    }
+                }
+            }
+            &[aria-expanded="false"] {
+                &::after {
+                    content: "\f107";
+                }
+            }
+        }
+    }
+    &.style-three {
+        .accordion-item {
+            background-color: transparent !important;
+        }
+        .accordion-body {
+            color: $light;
+        }
+        .accordion-button{
+            color: $white;
+            &[aria-expanded="true"], &[aria-expanded="false"] {
+                &::after {
+                    background-color: transparentize( $white, .9);
+                }
+            }
+        }
+    }
+}
+

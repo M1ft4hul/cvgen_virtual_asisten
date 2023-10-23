@@ -1,0 +1,173 @@
+ .feedback {
+    &.section-bg {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 93%);
+        @media (max-width: 991px) {
+            clip-path: unset;
+         }
+        &::before {
+            background-color: darken($base-two, 2%);
+            opacity: 0.86;
+            @media (max-width: 991px) {
+                opacity: 1;
+             }
+        }
+    }
+    @media (max-width: 991px) {
+       background-image: none !important; 
+    }
+    .section-heading {
+        @media (max-width:767px) {
+            margin-bottom: 35px;
+        }
+    }
+    &__inner {
+        position: relative;
+        &::before {
+            position: absolute;
+            content: "";
+            width: 26%;
+            height: 50%;
+            right: 0;
+            top: 0;
+            background-color: $color--one;
+            clip-path: polygon(0 0, 100% 98%, 100% 0);
+            @media (max-width: 1199px) {
+                height: 25%;
+                width: 20%;
+            }
+            @media (max-width: 991px) {
+                height: 15%;
+                width: 20%;
+            }
+            @media (max-width: 767px) {
+                height: 12%;
+                width: 18%;
+            }
+            @media (max-width: 575px) {
+                height: 8%;
+                width: 17%;
+            }
+            @media (max-width: 400px) {
+                height: 7%;
+                width: 20%;
+            }
+        }
+        &::after {
+            position: absolute;
+            content: "";
+            width: 11%;
+            height: 20%;
+            left: 0;
+            bottom: 0;
+            background-color: $color--two;
+            clip-path: polygon(0 0, 0 100%, 100% 100%);
+            @media (max-width: 991px) {
+                width: 15%;
+                height: 14%;
+            }
+            @media (max-width: 767px) {
+                width: 15%;
+                height: 10%;
+            }
+            @media (max-width: 575px) {
+                width: 15%;
+                height: 7%;
+            }
+            @media (max-width: 400px) {
+                width: 15%;
+                height: 5%;
+            }
+        }
+
+    }
+ }
+
+ .feedback-wrapper {
+     div[class*="col"] {
+         &:nth-child(1) {
+            .feedback-item__thumb {
+                background-color: $color--one;
+            }
+         }
+         &:nth-child(2) {
+            .feedback-item__thumb {
+                background-color: $color--two;
+                &::before {
+                    border-color: $color--two;
+                }
+            }
+         }
+         &:nth-child(3) {
+            .feedback-item__thumb {
+                background-color: $color--three;
+                &::before {
+                    border-color: $color--three;
+                }
+            }
+         }
+     }
+ }
+
+.feedback-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &:hover {
+        .feedback-item__thumb::before {
+            bottom: 3px;
+            right: 9px;
+        }
+    }
+    &__thumb {
+        @include background-with-border-middle;
+        margin-bottom: 23px;
+        @media (max-width: 991px) {
+            margin-bottom: 35px;
+        }
+        @media (max-width: 767px) {
+            margin-bottom: 30px;
+        }
+        img {
+            transform:rotate(-55deg);
+        }
+    }
+    &__name {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        @media (max-width: 991px) {
+            margin-top: 25px;
+        }
+        @media (max-width: 767px) {
+            margin-top: 20px;
+        }
+    }
+    &__designation {
+        font-size: 18px;
+        @media (max-width: 991px) {
+            font-size: 16px;
+        }
+    }
+    &__desc {
+        margin-top: 30px;
+        font-size: 24px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 1.8;
+        @media (max-width: 1199px) {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+        @media (max-width: 991px) {
+            margin-top: 25px;
+            font-size: 18px;
+        }
+        @media (max-width: 767px) {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+        @media (max-width: 575px) {
+            margin-top: 20px;
+            font-size: 15px;
+        }
+    }
+}
